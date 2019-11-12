@@ -2,16 +2,40 @@
 
 <html>
     <head>
+        <link rel="stylesheet" href="styles.css" type="text/css" />
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script src="app.js"></script>
+        
     </head>
     
     <body>
-        <h1>Avengers Character Search</h1>
+        <div class="header">
+            <h1>Avengers Character Search</h1>
+        </div>
+        
         &nbsp;
         &nbsp;
         &nbsp;
-        <button id="searchButton" onclick="superheroList();">Search</button>
+        <div class="main">
+            <form action="superheroes.php">
+               Searc by full name or alias: <br>
+               <input type="text" name="superheroes">
+               <input type="submit" value="search">
+            </form>
+            &nbsp;
+            <!--<button id="searchButton" onclick="superheroList();">Search</button>-->
+            &nbsp;
+            &nbsp;
+            
+            <div>RESULT</div>
+            &nbsp;
+            &nbsp;
+            <hr>
+            &nbsp;
+            &nbsp;
+            
+        </div>
+        
     </body>
 </html>
 
